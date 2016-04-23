@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\Denmark;
+namespace Yasumi\tests\Denmark;
 
 use DateTime;
 use DateTimeZone;
@@ -19,7 +19,7 @@ use Yasumi\Tests\Denmark\DenmarkBaseTestCase;
 /**
  * Class for testing Great Prayer Day in Denmark (Spain).
  */
-class DenmarkDayTest extends DenmarkBaseTestCase
+class GreatPrayerDayTest extends DenmarkBaseTestCase
 {
     /**
      * The name of the holiday to be tested

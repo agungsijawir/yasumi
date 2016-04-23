@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\Galicia;
+namespace Yasumi\tests\Spain\Galicia;
 
 use DateTime;
 use DateTimeZone;
@@ -55,6 +55,6 @@ class stJamesDayTest extends GaliciaBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY,
-            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), ['es_ES' => 'Santiago Apostol']);
+            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), [self::LOCALE => 'Santiago Apostol']);
     }
 }

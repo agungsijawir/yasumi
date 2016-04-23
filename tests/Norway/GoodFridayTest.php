@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Norway;
+namespace Yasumi\tests\Norway;
 
 use DateTime;
 use DateTimeZone;
@@ -18,7 +18,7 @@ use DateTimeZone;
 /**
  * Class containing tests for Good Friday in Norway.
  */
-class goodFridayTest extends NorwayBaseTestCase
+class GoodFridayTest extends NorwayBaseTestCase
 {
     /**
      * The name of the holiday to be tested
@@ -41,6 +41,6 @@ class goodFridayTest extends NorwayBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['nb_NO' => 'Langfredag']);
+            [self::LOCALE => 'Langfredag']);
     }
 }

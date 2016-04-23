@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Norway;
+namespace Yasumi\tests\Norway;
 
 use DateTime;
 use DateTimeZone;
@@ -41,6 +41,6 @@ class AscensionDayTest extends NorwayBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['nb_NO' => 'Kristi himmelfartsdag']);
+            [self::LOCALE => 'Kristi himmelfartsdag']);
     }
 }

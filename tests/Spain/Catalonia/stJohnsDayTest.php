@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\Catalonia;
+namespace Yasumi\tests\Spain\Catalonia;
 
 use DateTime;
 
@@ -53,6 +53,6 @@ class stJohnsDayTest extends CataloniaBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['es_ES' => 'Sant Joan']);
+            [self::LOCALE => 'Sant Joan']);
     }
 }

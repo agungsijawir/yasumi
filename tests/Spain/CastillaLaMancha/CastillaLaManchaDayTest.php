@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\CastillaLaMancha;
+namespace Yasumi\tests\Spain\CastillaLaMancha;
 
 use DateTime;
 use DateTimeZone;
@@ -55,6 +55,6 @@ class CastillaLaManchaDayTest extends CastillaLaManchaBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY,
-            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), ['es_ES' => 'Día de la Región Castilla-La Mancha']);
+            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), [self::LOCALE => 'Día de la Región Castilla-La Mancha']);
     }
 }

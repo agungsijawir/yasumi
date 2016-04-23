@@ -12,15 +12,17 @@
 
 // Translation for Good Friday
 return [
-    'en_US' => 'Good Friday',
-    'nl_NL' => 'Goede Vrijdag',
-    'nl_BE' => 'Goede Vrijdag',
-    'pl_PL' => 'Dobry Piątek',
-    'ja_JP' => 'グッドフライデー',
-    'fr_FR' => 'Vendredi saint',
-    'es_ES' => 'Viernes Santo',
     'da_DK' => 'Langfredag',
+    'de_DE' => 'Karfreitag',
+    'el_GR' => 'Μεγάλη Παρασκευή',
+    'en_US' => 'Good Friday',
+    'es_ES' => 'Viernes Santo',
+    'fi_FI' => 'Pitkäperjantai',
+    'fr_FR' => 'Vendredi saint',
+    'ja_JP' => 'グッドフライデー',
     'nb_NO' => 'Langfredag',
+    'nl_BE' => 'Goede Vrijdag',
+    'nl_NL' => 'Goede Vrijdag',
+    'pl_PL' => 'Wielki Piątek',
     'sv_SE' => 'långfredagen',
-    'fi_FI' => 'Pitkäperjantai'
 ];

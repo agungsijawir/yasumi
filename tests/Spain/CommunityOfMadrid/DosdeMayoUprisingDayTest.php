@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\CommunityOfMadrid;
+namespace Yasumi\tests\Spain\CommunityOfMadrid;
 
 use DateTime;
 use DateTimeZone;
@@ -41,6 +41,6 @@ class DosdeMayoUprisingDayTest extends CommunityOfMadridBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['es_ES' => 'Fiesta de la Comunidad de Madrid']);
+            [self::LOCALE => 'Fiesta de la Comunidad de Madrid']);
     }
 }

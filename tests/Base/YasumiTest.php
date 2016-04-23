@@ -7,12 +7,16 @@
  *  For the full copyright and license information, please view the LICENSE
  *  file that was distributed with this source code.
  *
- *  @author Sacha Telgenhof <stelgenhof@gmail.com>
+ * @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
+namespace Yasumi\tests\Base;
 
+use DateTime;
 use Faker\Factory;
-use Yasumi\Tests\YasumiBase;
+use InvalidArgumentException;
+use PHPUnit_Framework_TestCase;
 use Yasumi\Yasumi;
+use Yasumi\tests\YasumiBase;
 
 /**
  * Class YasumiTest.
@@ -41,6 +45,26 @@ class YasumiTest extends PHPUnit_Framework_TestCase
     public function testCreateWithInvalidProvider()
     {
         Yasumi::create('Mars');
+    }
+
+    /**
+     * Tests that an InvalidArgumentException is thrown in case we try to load a Trait as provider.
+     *
+     * @expectedException InvalidArgumentException
+     */
+    public function testCreateWithInvalidProviderBecauseItsATrait()
+    {
+        Yasumi::create('CommonHolidays');
+    }
+
+    /**
+     * Tests that an InvalidArgumentException is thrown in case we try to load the AbstractProvider as provider.
+     *
+     * @expectedException InvalidArgumentException
+     */
+    public function testCreateWithAbstractClassProvider()
+    {
+        Yasumi::create('AbstractProvider');
     }
 
     /**

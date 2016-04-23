@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\CastileAndLeon;
+namespace Yasumi\tests\Spain\CastileAndLeon;
 
 use DateTime;
 use DateTimeZone;
@@ -55,6 +55,6 @@ class CastileAndLeonDayTest extends CastileAndLeonBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY,
-            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), ['es_ES' => 'Día de Castilla y León']);
+            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), [self::LOCALE => 'Día de Castilla y León']);
     }
 }

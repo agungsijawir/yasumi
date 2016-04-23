@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain;
+namespace Yasumi\tests\Spain;
 
 use DateTime;
 
@@ -53,6 +53,6 @@ class AllSaintsDayTest extends SpainBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['es_ES' => 'Día de todos los Santos']);
+            [self::LOCALE => 'Día de todos los Santos']);
     }
 }

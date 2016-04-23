@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Italy;
+namespace Yasumi\tests\Italy;
 
 use DateTime;
 use DateTimeZone;
@@ -62,6 +62,6 @@ class RepublicDayTest extends ItalyBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY,
-            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), ['it_IT' => 'Festa della Republica']);
+            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), [self::LOCALE => 'Festa della Republica']);
     }
 }

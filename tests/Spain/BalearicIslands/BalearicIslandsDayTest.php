@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain\BalearicIslands;
+namespace Yasumi\tests\Spain\BalearicIslands;
 
 use DateTime;
 use DateTimeZone;
@@ -55,6 +55,6 @@ class BalearicIslandsDayTest extends BalearicIslandsBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY,
-            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), ['es_ES' => 'Día de les Illes Balears']);
+            $this->generateRandomYear(self::ESTABLISHMENT_YEAR), [self::LOCALE => 'Día de les Illes Balears']);
     }
 }

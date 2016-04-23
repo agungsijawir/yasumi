@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain;
+namespace Yasumi\tests\Spain;
 
 use DateTime;
 
@@ -53,6 +53,6 @@ class NewYearsDayTest extends SpainBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['es_ES' => 'Año Nuevo']);
+            [self::LOCALE => 'Año Nuevo']);
     }
 }

@@ -10,7 +10,7 @@
  *  @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
-namespace Yasumi\Tests\Spain;
+namespace Yasumi\tests\Spain;
 
 use DateTime;
 use DateTimeZone;
@@ -18,7 +18,7 @@ use DateTimeZone;
 /**
  * Class containing tests for Good Friday in Spain.
  */
-class goodFridayTest extends SpainBaseTestCase
+class GoodFridayTest extends SpainBaseTestCase
 {
     /**
      * The name of the holiday to be tested
@@ -41,6 +41,6 @@ class goodFridayTest extends SpainBaseTestCase
     public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
-            ['es_ES' => 'Viernes Santo']);
+            [self::LOCALE => 'Viernes Santo']);
     }
 }

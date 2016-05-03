@@ -7,17 +7,19 @@
  *  For the full copyright and license information, please view the LICENSE
  *  file that was distributed with this source code.
  *
- *  @author Sacha Telgenhof <stelgenhof@gmail.com>
+ * @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
 namespace Yasumi\tests\Norway;
 
 use DateTime;
+use Yasumi\tests\YasumiTestCaseInterface;
+use Yasumi\Holiday;
 
 /**
  * Class containing tests for International Workers' Day (i.e. Labour Day) in Norway.
  */
-class InternationalWorkersDayTest extends NorwayBaseTestCase
+class InternationalWorkersDayTest extends NorwayBaseTestCase implements YasumiTestCaseInterface
 {
     /**
      * The name of the holiday
@@ -38,9 +40,9 @@ class InternationalWorkersDayTest extends NorwayBaseTestCase
     }
 
     /**
-     * Tests translated name of International Workers' Day.
+     * Tests translated name of the holiday defined in this test.
      */
-    public function testTranslatedInternationalWorkersDay()
+    public function testTranslation()
     {
         $this->assertTranslatedHolidayName(self::REGION, self::HOLIDAY, $this->generateRandomYear(),
             [self::LOCALE => 'Arbeidernes dag']);
@@ -54,5 +56,13 @@ class InternationalWorkersDayTest extends NorwayBaseTestCase
     public function InternationalWorkersDayDataProvider()
     {
         return $this->generateRandomDates(5, 1, self::TIMEZONE);
+    }
+
+    /**
+     * Tests type of the holiday defined in this test.
+     */
+    public function testHolidayType()
+    {
+        $this->assertHolidayType(self::REGION, self::HOLIDAY, $this->generateRandomYear(), Holiday::TYPE_NATIONAL);
     }
 }

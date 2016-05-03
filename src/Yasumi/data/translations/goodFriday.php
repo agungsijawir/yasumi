@@ -15,6 +15,8 @@ return [
     'da_DK' => 'Langfredag',
     'de_DE' => 'Karfreitag',
     'el_GR' => 'Μεγάλη Παρασκευή',
+    'en_GB' => 'Good Friday',
+    'en_NZ' => 'Good Friday',
     'en_US' => 'Good Friday',
     'es_ES' => 'Viernes Santo',
     'fi_FI' => 'Pitkäperjantai',

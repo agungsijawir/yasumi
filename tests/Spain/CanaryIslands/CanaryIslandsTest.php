@@ -7,7 +7,7 @@
  *  For the full copyright and license information, please view the LICENSE
  *  file that was distributed with this source code.
  *
- *  @author Sacha Telgenhof <stelgenhof@gmail.com>
+ * @author Sacha Telgenhof <stelgenhof@gmail.com>
  */
 
 namespace Yasumi\tests\Spain\CanaryIslands;
@@ -84,6 +84,6 @@ class CanaryIslandsTest extends CanaryIslandsBaseTestCase
      */
     protected function setUp()
     {
-        $this->year = $this->generateRandomYear(1981);
+        $this->year = $this->generateRandomYear(1984);
     }
 }
